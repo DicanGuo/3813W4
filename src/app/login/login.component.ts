@@ -21,7 +21,6 @@ export class LoginComponent implements OnInit {
   }
 
   itemClicked(){
-    
     console.log(this.userid, this.password);
     // this.router.navigate('/account:userid')
 
