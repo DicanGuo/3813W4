@@ -9,7 +9,8 @@ import { Router } from '@angular/router';
 export class LoginComponent implements OnInit {
     userid: string = '';
     password: string = '';
-    errorMassage = "User credential not match";
+    // errorMassage = "User credential not match";
+    errorMassage = "";
     
     users = [
       {'userid': '1', 'password': '123'},
@@ -23,14 +24,15 @@ export class LoginComponent implements OnInit {
   }
 
   itemClicked(){
-    // console.log(this.userid, this.password);
+    console.log(this.userid, this.password);
+    console.log(this.users.length)
     // this.router.navigate('/account:userid')
     for (let i = 0; i < this.users.length; i ++){
       if (this.userid == this.users[i].userid && this.password == this.users[i].password) {
         this.router.navigateByUrl('/account/' + this.userid);
       }
       else {
-        // alert(this.errorMassage);
+        this.errorMassage = "User credential not match";
       }
     }
   }
