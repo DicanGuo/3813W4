@@ -8,6 +8,12 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ng new week4tut
 
+cd week4tut
+
+ng build
+
+ng serve --open
+
 ## Npm (installing madules)
 
 cd week4tut
