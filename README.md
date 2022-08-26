@@ -2,19 +2,19 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.3.
 
-#Command used for:
+# Command used for:
 
-##Angular (in node)
+## Angular (in node)
 
 ng new week4tut
 
-##Npm (installing madules)
+## Npm (installing madules)
 
 cd week4tut
 
 npm install bootstrap --save
 
-##GIT
+## GIT
 
 cd week4tut
 git init
