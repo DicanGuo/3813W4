@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, ActivatedRoute, ParamMap } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -17,7 +17,7 @@ export class LoginComponent implements OnInit {
       {'userid': '3', 'password': '123'}
     ]
 
-  constructor(private router: Router, private route: ActivatedRoute) { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
@@ -25,12 +25,12 @@ export class LoginComponent implements OnInit {
   itemClicked(){
     // console.log(this.userid, this.password);
     // this.router.navigate('/account:userid')
-    for (let i in this.users){
+    for (let i = 0; i < this.users.length; i ++){
       if (this.userid == this.users[i].userid && this.password == this.users[i].password) {
         this.router.navigateByUrl('/account/' + this.userid);
       }
       else {
-        alert(this.errorMassage);
+        // alert(this.errorMassage);
       }
     }
   }
