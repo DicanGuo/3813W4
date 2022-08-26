@@ -16,7 +16,7 @@ git add *
 git commit -m "Week4 tut setup"
 git remote add origin https://github.com/DicanGuo/3813W4.git
 git push f -u origin main
-git pull -all
+git pull --all
 
 ## Development server
 
